@@ -4,6 +4,7 @@ import { useUserContext } from "../context/userContext";
 const Header = () => {
   const { user, logOut } = useUserContext();
   console.log(user);
+
   return (
     <div className="ui fixed menu">
       <div className="ui container center">

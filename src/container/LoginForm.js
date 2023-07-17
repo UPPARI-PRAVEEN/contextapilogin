@@ -2,14 +2,15 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useUserContext } from "../context/userContext";
 
+
 const LoginForm = () => {
   const { register, handleSubmit, errors } = useForm();
-  const { logIn } = useUserContext();
-  const onSubmit = (data) => {
+  const {logIn} =useUserContext()
+  const onSubmit = (data)=>{
     logIn(data.username);
-    console.log("Form data", data);
-  };
-  console.log(errors);
+    console.log("Form data", data)
+  }
+  console.log(errors)
 
   return (
     <div className="login">
